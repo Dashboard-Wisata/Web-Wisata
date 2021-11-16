@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChartJsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['as' => 'api.', 'namespace' => 'Api'], function () {
     Route::get('places', 'LokasiWisataController@index')->name('places.index');
 });
+Route::get('chartjs', [ChartJsController::class, 'index'])->name('chartjs.index');

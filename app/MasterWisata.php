@@ -8,5 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class MasterWisata extends Model
 {
     protected $guarded = [];
-    
 }

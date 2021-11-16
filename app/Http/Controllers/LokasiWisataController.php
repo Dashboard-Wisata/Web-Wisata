@@ -11,7 +11,7 @@ class LokasiWisataController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Place $place)
+    public function index()
     {
         return view('places.index');
     }
